@@ -10,7 +10,7 @@ Create a command line tool that will scrape all images from a given URLand creat
 3. It should run on both windows and Linux
 4. Be able to explain everything you did.
 # Specification
-1 .Scan the given URLfor image URLs
+1. Scan the given URLfor image URLs
 2. Download all images to the output folder
 3. Create inthe given output folder an index.html file
 4. The created HTML file will include a table with two columns 
