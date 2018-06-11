@@ -57,9 +57,10 @@ function buildHTML(ImgUrls) {
     ImgUrls.map((img) => {
         // check if the img src is relative
         if (!img.src.includes('http')) img.src = domain + img.src;
+        let imgWidth = imgMaxWidth > img.width ? img.width : imgMaxWidth;
         markup += '<table style="width:100%"><tr>';
         markup += '<td>' + img.src + '</td>';
-        markup += '<td><img src="' + img.src + '" width="' + imgMaxWidth + 'px" height="' + imgMaxWidth / img.width * img.height + 'px"></img></td>';
+        markup += '<td><img src="' + img.src + '" width="' + imgWidth + 'px" height="' + imgWidth / img.width * img.height + 'px"></img></td>';
         markup += '</tr></table>';
     });
 
